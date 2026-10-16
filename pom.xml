@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.isblocks.spi.asic</groupId>
+  <artifactId>isblocks-java-spi-asic</artifactId>
+  <version>1.0</version>
+  <name>isblocks-java-spi-asic</name>
+  <packaging>jar</packaging>
+
+  <inceptionYear>2022</inceptionYear>
+
+  <description>
+    ASiC Signing Library
+  </description>
+
+  <developers>
+    <developer>
+      <email>info@isblocks.com</email>
+      <organizationUrl>https://www.isblocks.com</organizationUrl>
+    </developer>
+  </developers>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <target>17</target>
+          <source>17</source>
+          <verbose>false</verbose>
+          <fork>true</fork>
+          <compilerVersion>17</compilerVersion>
+          <skipTests>${skipTests}</skipTests>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.8.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.isblocks.signingblock</groupId>
+      <artifactId>isblocks-java-signingblock</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.isblocks.model</groupId>
+      <artifactId>isblocks-java-model</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.isblocks.utils</groupId>
+      <artifactId>isblocks-java-utils</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.isblocks.spi.cms</groupId>
+      <artifactId>isblocks-java-spi-cms</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.22.1</version>
+    </dependency>
+  </dependencies>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+</project>
